@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Márcio Cardoso | Advogado Criminalista">
-    <title>Márcio Cardoso | Advogado Criminalista</title>
+    <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
+    <title>Márcio Cardoso - Advogado Criminal - Atendimento 24h</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -19,6 +19,23 @@
             padding: 30px;
             text-align: center;
             font-size: 1.5em;
+            position: relative;
+        }
+        .whatsapp-link {
+            color: #ff6f61;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-link:hover {
+            background-color: #ff3f31;
         }
         nav {
             background-color: #444;
@@ -47,19 +64,33 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .photo-gallery {
+        .box-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            margin-top: 20px;
         }
-        .photo-gallery img {
-            width: 30%;
+        .box {
+            width: 45%;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .contact-info {
-            text-align: left;
-            margin-left: 20px;
+        .box h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .box p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        .subsection ul {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        .subsection ul li {
+            margin-bottom: 5px;
         }
         footer {
             background-color: #333;
@@ -80,35 +111,13 @@
             margin-top: 10px;
             font-weight: bold;
         }
-        .service-section {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .service-box {
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-            width: 30%;
-            margin: 10px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .service-box img {
-            max-width: 80px;
-            margin-bottom: 15px;
-        }
-        .service-box h3 {
-            margin-bottom: 10px;
-            font-size: 1.5em;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Márcio Cardoso | Advogado Criminalista</h1>
+        <h1>Márcio Cardoso - Advogado Criminal - Atendimento 24h</h1>
+        <a href="https://wa.me/5565996651992" class="whatsapp-link">Clique aqui para WhatsApp</a>
     </header>
 
     <nav>
@@ -118,70 +127,76 @@
         <a href="#contato">Contato</a>
     </nav>
 
-    <!-- Seção Sobre Mim com 3 fotos -->
-    <section id="sobre-mim">
-        <h2>Sobre Mim</h2>
-        <p>Sou Márcio Cardoso, advogado criminalista especializado em Direito Penal. Minha missão é defender os direitos fundamentais e lutar contra injustiças. Possuo ampla experiência em Processos Criminais complexos, sempre buscando a verdade e a justiça.</p>
-        <div class="photo-gallery">
-            <img src="foto1.jpg" alt="Foto de Márcio 1">
-            <img src="foto2.jpg" alt="Foto de Márcio 2">
-            <img src="foto3.jpg" alt="Foto de Márcio 3">
-        </div>
-    </section>
-
-    <!-- Seção Currículo -->
-    <section id="curriculo">
-        <h2>Currículo</h2>
-        <p>Para mais detalhes sobre minha formação e experiência, consulte meu currículo completo: <a href="https://lattes.cnpq.br/7988648105527848" target="_blank">Lattes</a></p>
-    </section>
-
     <!-- Seção Serviços -->
     <section id="servicos">
-        <h2>Serviços Jurídicos</h2>
-        <div class="service-section">
-            <div class="service-box">
-                <img src="icone-defesa-criminal.png" alt="Ícone Defesa Criminal">
+        <h2>Serviços</h2>
+        <div class="box-container">
+            <div class="box">
                 <h3>Defesa Criminal</h3>
-                <p>Defesa completa e estratégica em todas as fases do processo penal, desde a acusação inicial até a sentença final, para proteger seus direitos e interesses.</p>
+                <p>Atuação completa em todas as fases do processo penal, desde a prisão até o cumprimento da sentença, com defesa estratégica para cada caso.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Acompanhamento da prisão</li>
+                        <li>Relaxamento/Revogação da Prisão</li>
+                        <li>Pedido de Liberdade Provisória</li>
+                        <li>Pedido de Progressão de Regime</li>
+                        <li>Recursos Criminais</li>
+                        <li>Revisão Penal</li>
+                        <li>Habeas Corpus</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-box">
-                <img src="icone-prisao-flagrante.png" alt="Ícone Prisão em Flagrante">
-                <h3>Prisão em Flagrante</h3>
-                <p>Defesa imediata para contestar prisões em flagrante, garantindo que seus direitos sejam respeitados desde o início.</p>
+
+            <div class="box">
+                <h3>Prisões Ilegais ou Desnecessárias</h3>
+                <p>Combate a prisões abusivas e indevidas, garantindo que seus direitos sejam respeitados e que a justiça seja aplicada de forma eficaz.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Pedido de Relaxamento/Revogação da Prisão</li>
+                        <li>Liberdade Provisória</li>
+                        <li>Progressão de Regime</li>
+                        <li>Recursos Criminais</li>
+                        <li>Revisão Penal</li>
+                        <li>Habeas Corpus</li>
+                    </ul>
+                </div>
             </div>
-            <div class="service-box">
-                <img src="icone-habeas-corpus.png" alt="Ícone Habeas Corpus">
-                <h3>Habeas Corpus</h3>
-                <p>Ação judicial para contestar prisões ilegais ou abusivas, buscando garantir sua liberdade perante o sistema judicial.</p>
-            </div>
-            <div class="service-box">
-                <img src="icone-audiencia-custodia.png" alt="Ícone Audiência de Custódia">
-                <h3>Audiência de Custódia</h3>
-                <p>Representação durante a audiência de custódia para assegurar que seus direitos sejam preservados e o tratamento seja justo.</p>
-            </div>
-            <div class="service-box">
-                <img src="icone-revisao-criminal.png" alt="Ícone Revisão Criminal">
-                <h3>Revisão Criminal</h3>
-                <p>Análise detalhada de condenações anteriores para identificar erros judiciais e buscar a correção de injustiças.</p>
+
+            <div class="box">
+                <h3>Tribunal do Júri</h3>
+                <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente com máxima dedicação.</p>
             </div>
         </div>
-        <!-- Nova subseção: Tribunal do Júri -->
-    <div class="service-box">
-        <img src="tribunal_juri.jpg" alt="Tribunal do Júri">
-        <h3>Tribunal do Júri</h3>
-        <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente. Com perspicácia e minuciosidade para cada processo, garantindo uma defesa justa e com o melhor nível.</p>
-    </div>
+    </section>
+
+    <!-- Seção Método do Atendimento -->
+    <section id="metodo">
+        <h2>Método do Atendimento</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>1. Primeiro Contato</h3>
+                <p>No primeiro contato, o cliente será informado sobre seus direitos e a situação, de forma clara e objetiva, para tomar decisões seguras.</p>
+            </div>
+
+            <div class="box">
+                <h3>2. Decisão de Contratar</h3>
+                <p>Ao decidir contratar o serviço, uma reunião será agendada, presencial ou online, para discutir estratégias e caminhos possíveis.</p>
+            </div>
+
+            <div class="box">
+                <h3>3. Serviço Contratado</h3>
+                <p>Com o serviço contratado, será oferecido acompanhamento completo, mantendo o cliente informado durante todo o processo.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
-        <div class="contact-info">
-            <p>Celular: (65) 9 9665-1992</p>
-            <p>WhatsApp: <a href="https://wa.me/5565996651992" target="_blank">Clique aqui para WhatsApp</a></p>
-            <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-            <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
-        </div>
+        <p>Celular: (65) 9 9665-1992</p>
+        <p>WhatsApp: <a href="https://wa.me/5565996651992">Clique aqui para WhatsApp</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
+        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
     </section>
 
     <!-- Frase final -->
