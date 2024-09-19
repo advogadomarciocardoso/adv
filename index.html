@@ -47,13 +47,15 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .service-item {
+        .photo-gallery {
+            display: flex;
+            justify-content: space-between;
             margin-top: 20px;
         }
-        .service-item img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+        .photo-gallery img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .contact-info {
             text-align: left;
@@ -78,6 +80,29 @@
             margin-top: 10px;
             font-weight: bold;
         }
+        .service-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .service-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-box img {
+            max-width: 80px;
+            margin-bottom: 15px;
+        }
+        .service-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
@@ -89,8 +114,8 @@
     <nav>
         <a href="#sobre-mim">Sobre Mim</a>
         <a href="#curriculo">Currículo</a>
-        <a href="#contato">Contato</a>
         <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
     </nav>
 
     <!-- Seção Sobre Mim com 3 fotos -->
@@ -110,6 +135,50 @@
         <p>Para mais detalhes sobre minha formação e experiência, consulte meu currículo completo: <a href="https://lattes.cnpq.br/7988648105527848" target="_blank">Lattes</a></p>
     </section>
 
+   <!-- Seção Serviços -->
+<section id="servicos">
+    <h2>Serviços</h2>
+
+    <div class="service-item">
+        <h3>Defesa Criminal</h3>
+        <p>Atuação estratégica em todas as fases do processo penal, assegurando a defesa desde o início das acusações até o julgamento final.</p>
+        <img src="defesa_criminal.jpg" alt="Defesa Criminal">
+    </div>
+
+    <div class="service-item">
+        <h3>Prisão em Flagrante</h3>
+        <p>Atendimento imediato em casos de prisão em flagrante, garantindo o cumprimento dos direitos do acusado e a justiça no processo.</p>
+        <img src="prisao_flagrante.jpg" alt="Prisão em Flagrante">
+    </div>
+
+    <div class="service-item">
+        <h3>Habeas Corpus</h3>
+        <p>Solicitação judicial para contestar prisões ilegais ou abusivas, com o objetivo de assegurar a liberdade do cliente.</p>
+        <img src="habeas_corpus.jpg" alt="Habeas Corpus">
+    </div>
+
+    <div class="service-item">
+        <h3>Audiência de Custódia</h3>
+        <p>Representação durante a audiência de custódia, assegurando que o cliente tenha seus direitos respeitados desde o início da prisão.</p>
+        <img src="audiencia_custodia.jpg" alt="Audiência de Custódia">
+    </div>
+
+    <div class="service-item">
+        <h3>Revisão Criminal</h3>
+        <p>Reavaliação de sentenças condenatórias passadas, visando corrigir eventuais erros judiciais e injustiças processuais.</p>
+        <img src="revisao_criminal.jpg" alt="Revisão Criminal">
+    </div>
+
+    <!-- Nova subseção: Tribunal do Júri -->
+    <div class="service-item">
+        <h3>Tribunal do Júri</h3>
+        <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente. Com perspicácia e minuciosidade para cada processo, garantindo uma defesa justa e com o melhor nível.</p>
+        <img src="tribunal_juri.jpg" alt="Tribunal do Júri">
+    </div>
+
+</section>
+
+
     <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
@@ -119,49 +188,6 @@
             <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
             <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
         </div>
-    </section>
-
-    <!-- Seção Serviços -->
-    <section id="servicos">
-        <h2>Serviços</h2>
-
-        <div class="service-item">
-            <h3>Defesa Criminal</h3>
-            <p>Atuação estratégica em todas as fases do processo penal, assegurando a defesa desde o início das acusações até o julgamento final.</p>
-            <img src="defesa_criminal.jpg" alt="Defesa Criminal">
-        </div>
-
-        <div class="service-item">
-            <h3>Prisão em Flagrante</h3>
-            <p>Atendimento imediato em casos de prisão em flagrante, garantindo o cumprimento dos direitos do acusado e a justiça no processo.</p>
-            <img src="prisao_flagrante.jpg" alt="Prisão em Flagrante">
-        </div>
-
-        <div class="service-item">
-            <h3>Habeas Corpus</h3>
-            <p>Solicitação judicial para contestar prisões ilegais ou abusivas, com o objetivo de assegurar a liberdade do cliente.</p>
-            <img src="habeas_corpus.jpg" alt="Habeas Corpus">
-        </div>
-
-        <div class="service-item">
-            <h3>Audiência de Custódia</h3>
-            <p>Representação durante a audiência de custódia, assegurando que o cliente tenha seus direitos respeitados desde o início da prisão.</p>
-            <img src="audiencia_custodia.jpg" alt="Audiência de Custódia">
-        </div>
-
-        <div class="service-item">
-            <h3>Revisão Criminal</h3>
-            <p>Reavaliação de sentenças condenatórias passadas, visando corrigir eventuais erros judiciais e injustiças processuais.</p>
-            <img src="revisao_criminal.jpg" alt="Revisão Criminal">
-        </div>
-
-        <!-- Nova subseção: Tribunal do Júri -->
-        <div class="service-item">
-            <h3>Tribunal do Júri</h3>
-            <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente. Com perspicácia e minuciosidade para cada processo, garantindo uma defesa justa e com o melhor nível.</p>
-            <img src="tribunal_juri.jpg" alt="Tribunal do Júri">
-        </div>
-
     </section>
 
     <!-- Frase final -->
