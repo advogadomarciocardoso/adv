@@ -85,6 +85,13 @@
             font-size: 1em;
             line-height: 1.5em;
         }
+        .subsection ul {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        .subsection ul li {
+            margin-bottom: 5px;
+        }
         footer {
             background-color: #333;
             color: #fff;
@@ -104,6 +111,16 @@
             margin-top: 10px;
             font-weight: bold;
         }
+        .photo-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .photo-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -120,15 +137,23 @@
         <a href="#contato">Contato</a>
     </nav>
 
-    <!-- Seção Sobre Mim com 3 fotos -->
+    <!-- Seção Sobre Mim -->
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
-        <p>Sou Márcio Cardoso, advogado criminalista especializado em Direito Penal. Minha missão é defender os direitos fundamentais e lutar contra injustiças. Possuo ampla experiência em processos criminais complexos, sempre buscando a verdade e a justiça.</p>
+        <p>Olá, eu sou Márcio Cardoso, advogado especializado em Direito Criminal com mais de 10 anos de experiência. Ao longo da minha carreira, dediquei-me à defesa de meus clientes com comprometimento e paixão, sempre buscando justiça e soluções eficientes para cada caso.</p>
+        <p>Atuo em diversas áreas do Direito Penal, incluindo defesa criminal, recursos, habeas corpus, e casos complexos no Tribunal do Júri. Minha missão é garantir que os direitos dos meus clientes sejam respeitados, oferecendo uma defesa justa e combativa.</p>
+        
         <div class="photo-gallery">
-            <img src="foto1.jpg" alt="Foto de Márcio 1">
-            <img src="foto2.jpg" alt="Foto de Márcio 2">
-            <img src="foto3.jpg" alt="Foto de Márcio 3">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
         </div>
+    </section>
+
+    <!-- Seção Currículo -->
+    <section id="curriculo">
+        <h2>Currículo</h2>
+        <p>Para mais informações sobre minha trajetória profissional, acesse meu <a href="http://lattes.cnpq.br/1234567890123456" target="_blank">Currículo Lattes</a>.</p>
     </section>
 
     <!-- Seção Serviços -->
@@ -137,14 +162,13 @@
         <div class="box-container">
             <div class="box">
                 <h3>Defesa Criminal</h3>
-                <p>Atuação em defesa completa em processos criminais, assegurando proteção desde o início da prisão até o julgamento final.</p>
-                <div>
-                    <h4>Subseções:</h4>
+                <p>Atuação completa em todas as fases do processo penal, desde a prisão até o cumprimento da sentença, com defesa estratégica para cada caso.</p>
+                <div class="subsection">
                     <ul>
                         <li>Acompanhamento da prisão</li>
                         <li>Relaxamento/Revogação da Prisão</li>
                         <li>Pedido de Liberdade Provisória</li>
-                        <li>Progressão de Regime</li>
+                        <li>Pedido de Progressão de Regime</li>
                         <li>Recursos Criminais</li>
                         <li>Revisão Penal</li>
                         <li>Habeas Corpus</li>
@@ -154,9 +178,8 @@
 
             <div class="box">
                 <h3>Prisões Ilegais ou Desnecessárias</h3>
-                <p>Atuação imediata para combater prisões indevidas ou abusivas, garantindo que seus direitos sejam respeitados e a justiça prevaleça.</p>
-                <div>
-                    <h4>Subseções:</h4>
+                <p>Combate a prisões abusivas e indevidas, garantindo que seus direitos sejam respeitados e que a justiça seja aplicada de forma eficaz.</p>
+                <div class="subsection">
                     <ul>
                         <li>Pedido de Relaxamento/Revogação da Prisão</li>
                         <li>Liberdade Provisória</li>
@@ -170,7 +193,7 @@
 
             <div class="box">
                 <h3>Tribunal do Júri</h3>
-                <p>Representação completa em julgamentos no Tribunal do Júri, assegurando uma defesa meticulosa e estratégica em prol dos interesses do cliente.</p>
+                <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente com máxima dedicação.</p>
             </div>
         </div>
     </section>
@@ -181,17 +204,17 @@
         <div class="box-container">
             <div class="box">
                 <h3>1. Primeiro Contato</h3>
-                <p>No primeiro contato, seja por telefone, WhatsApp ou pessoalmente, o cliente terá explicações claras sobre seus direitos e a situação em questão.</p>
+                <p>No primeiro contato, o cliente será informado sobre seus direitos e a situação, de forma clara e objetiva, para tomar decisões seguras.</p>
             </div>
 
             <div class="box">
                 <h3>2. Decisão de Contratar</h3>
-                <p>Após a decisão de contratação, será agendada uma reunião, presencial ou online, para discutir as melhores estratégias e soluções.</p>
+                <p>Ao decidir contratar o serviço, uma reunião será agendada, presencial ou online, para discutir estratégias e caminhos possíveis.</p>
             </div>
 
             <div class="box">
                 <h3>3. Serviço Contratado</h3>
-                <p>Com a contratação efetivada, garantirei acompanhamento completo, mantendo o cliente atualizado e disponível para todas as dúvidas e questões.</p>
+                <p>Com o serviço contratado, será oferecido acompanhamento completo, mantendo o cliente informado durante todo o processo.</p>
             </div>
         </div>
     </section>
@@ -202,19 +225,13 @@
         <p>Celular: (65) 9 9665-1992</p>
         <p>WhatsApp: <a href="https://wa.me/5565996651992">Clique aqui para WhatsApp</a></p>
         <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
+        <p>Email:```html
+        <a href="mailto:marcio.cardoso@adv.br">marcio.cardoso@adv.br</a></p>
     </section>
 
-    <!-- Frase final -->
-    <div class="quote">
-        "A advocacia não é profissão para covardes."
-    </div>
-    <div class="quote-author">
-        Sobral Pinto
-    </div>
-
     <footer>
-        <p>&copy; 2024 Márcio Cardoso. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
+        <a href="https://wa.me/5565996651992" class="whatsapp-link">Clique aqui para WhatsApp</a>
     </footer>
 
 </body>
