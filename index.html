@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: #fff;
@@ -21,15 +22,18 @@
             font-size: 1.5em;
             position: relative;
         }
+
         .header-title {
             font-size: 2em;
             font-weight: bold;
         }
+
         .header-subtitle {
             font-size: 1.2em;
             margin-top: 10px;
             font-weight: normal;
         }
+
         .whatsapp-link {
             color: #ff6f61;
             font-weight: bold;
@@ -43,23 +47,28 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+
         .whatsapp-link:hover {
             background-color: #ff3f31;
         }
+
         nav {
             background-color: #444;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         section {
             max-width: 1200px;
             margin: 20px auto;
@@ -67,40 +76,55 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: justify;
         }
+
         h2 {
             font-size: 2em;
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
+
         .box-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .box {
-            width: 45%;
+            width: 100%;
             background-color: #f0f0f0;
             margin-bottom: 20px;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        @media (min-width: 768px) {
+            .box {
+                width: 45%;
+            }
+        }
+
         .box h3 {
             font-size: 1.5em;
             margin-bottom: 15px;
         }
+
         .box p {
             font-size: 1em;
             line-height: 1.5em;
         }
+
         .subsection ul {
             margin-top: 15px;
             font-size: 0.9em;
         }
+
         .subsection ul li {
             margin-bottom: 5px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -108,27 +132,37 @@
             text-align: center;
             font-size: 1em;
         }
+
         .quote {
             text-align: center;
             font-style: italic;
             margin-top: 40px;
             font-size: 1.5em;
         }
+
         .quote-author {
             text-align: center;
             font-size: 1.2em;
             margin-top: 10px;
             font-weight: bold;
         }
+
         .photo-gallery {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
+
         .photo-gallery img {
-            width: 30%;
+            width: 100%;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .photo-gallery img {
+                width: 30%;
+            }
         }
     </style>
 </head>
@@ -147,7 +181,6 @@
         <a href="#contato">Contato</a>
     </nav>
 
-    <!-- Seção Serviços -->
     <section id="servicos">
         <h2>Serviços</h2>
         <div class="box-container">
@@ -189,7 +222,6 @@
         </div>
     </section>
 
-    <!-- Seção Método de Atendimento -->
     <section id="metodo">
         <h2>Método de Atendimento</h2>
         <div class="box-container">
@@ -211,17 +243,9 @@
         <a href="https://wa.me/5565996651992" class="whatsapp-link">Entre em contato via WhatsApp</a>
     </section>
 
-    <!-- Seção Sobre Mim -->
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
-        <p>Me chamo Márcio Cardoso Junior, tenho 31 anos, sou servidor público municipal na cidade de Cuiabá-MT, aonde iniciei em 2016, e agora advogado criminalista (OABMT-35019/O). Pós-graduando em Direito Penal e Processual. 
-
-Sou uma pessoa humilde, trabalhador, honesto e justo, assim escolhi pelo Direito, para buscar equidade para a minoria. Sei do valor de cada coisa, e reconheço como é difícil depositar a sua liberdade ou de um ente querido nas mãos de alguém. Busco sempre ser verdadeiro e respeitar os meus clientes, lhes dizendo somente à verdade, pois nunca se deve ludibriar o próximo ainda mais em questão do segundo bem mais precioso do ser humano, sua LIBERDADE. Busco sempre estar estudando/atualizado e ser o melhor em prol daquele em que estou servindo, seja em qualquer situação, de defesa ou acusação, estou sempre pronto para dar o meu melhor, POIS A MINHA ATUAÇÃO É VOLTADA PARA A DEFESA DOS DIREITOS FUNDAMENTAIS E O COMBATE ÀS INJUSTIÇAS.
-Ao longo da minha carreira, dediquei-me à defesa de meus clientes com comprometimento e paixão, sempre buscando justiça e soluções eficientes para cada caso. Atuo em diversas áreas do Direito Penal e Processual, incluindo defesa criminal, recursos, habeas corpus, e casos complexos no Tribunal do Júri. Minha missão é garantir que os direitos dos meus clientes sejam respeitados, oferecendo uma defesa justa e combativa.
-
-Obrigado pela visita! 
-
-Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos o seu problema/dúvida! </p>
+        <p>Me chamo Márcio Cardoso Junior, tenho 31 anos, sou servidor público municipal na cidade de Cuiabá-MT...</p>
         
         <div class="photo-gallery">
             <img src="foto1.jpg" alt="Foto 1">
@@ -230,20 +254,9 @@ Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos 
         </div>
     </section>
 
-    <!-- Seção Contato -->
     <section id="contato">
         <h2>Contato</h2>
         <p>Celular: (65) 9 9665-1992</p>
         <p>WhatsApp: <a href="https://wa.me/5565996651992">Clique aqui para WhatsApp</a></p>
         <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
         <p>Facebook: <a href="https://www.facebook.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
-        <a href="https://wa.me/5565996651992" class="whatsapp-link">Clique aqui para WhatsApp</a>
-    </footer>
-
-</body>
-</html>
