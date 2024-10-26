@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
-    <title>Márcio Cardoso - Advogado Criminal - Atendimento 24h</title>
+    <title>Márcio Cardoso - Advogado Criminal</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -12,39 +12,49 @@
             color: #333;
             margin: 0;
             padding: 0;
+            text-align: justify;
         }
         header {
-            background-color: #333;
+            background: url('header-background.jpg') center/cover no-repeat, #333;
             color: #fff;
-            padding: 30px;
+            padding: 50px 20px;
             text-align: center;
-            font-size: 1.5em;
             position: relative;
         }
         .header-title {
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: bold;
+            margin: 0;
         }
         .header-subtitle {
             font-size: 1.2em;
-            margin-top: 10px;
+            margin-top: 5px;
             font-weight: normal;
         }
         .whatsapp-link {
-            color: #ff6f61;
+            color: #fff;
             font-weight: bold;
             font-size: 1.2em;
             text-decoration: none;
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background-color: #ff6f61;
-            color: #fff;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #25d366;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
         .whatsapp-link:hover {
-            background-color: #ff3f31;
+            background-color: #128c7e;
+        }
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background: url('whatsapp-icon.png') center/contain no-repeat;
         }
         nav {
             background-color: #444;
@@ -67,7 +77,6 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            text-align: justify; /* Adicionando texto justificado */
         }
         h2 {
             font-size: 2em;
@@ -91,35 +100,12 @@
             font-size: 1.5em;
             margin-bottom: 15px;
         }
-        .box p {
-            font-size: 1em;
-            line-height: 1.5em;
-        }
-        .subsection ul {
-            margin-top: 15px;
-            font-size: 0.9em;
-        }
-        .subsection ul li {
-            margin-bottom: 5px;
-        }
         footer {
             background-color: #333;
             color: #fff;
             padding: 30px;
             text-align: center;
             font-size: 1em;
-        }
-        .quote {
-            text-align: center;
-            font-style: italic;
-            margin-top: 40px;
-            font-size: 1.5em;
-        }
-        .quote-author {
-            text-align: center;
-            font-size: 1.2em;
-            margin-top: 10px;
-            font-weight: bold;
         }
         .photo-gallery {
             display: flex;
@@ -131,25 +117,6 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        /* Estilos Responsivos */
-        @media (max-width: 768px) {
-            .box {
-                width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
-            }
-            nav a {
-                display: block; /* Torna os links do menu empilhados verticalmente no mobile */
-                margin: 10px 0;
-            }
-            .photo-gallery {
-                flex-direction: column; /* Torna as fotos em uma coluna no mobile */
-                align-items: center;
-            }
-            .photo-gallery img {
-                width: 80%; /* Ajusta a largura das imagens no mobile */
-                margin-bottom: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -157,7 +124,10 @@
     <header>
         <div class="header-title">Márcio Cardoso - Advogado Criminal</div>
         <div class="header-subtitle">Atendimento 24 horas</div>
-        <a href="https://wa.me/5565996651992" class="whatsapp-link">Me chame no WhatsApp!</a>
+        <a href="https://wa.me/5565996651992" class="whatsapp-link">
+            <span class="whatsapp-icon"></span>
+            Clique aqui para WhatsApp
+        </a>
     </header>
 
     <nav>
@@ -174,34 +144,11 @@
             <div class="box">
                 <h3>Defesa Criminal</h3>
                 <p>Atuação completa em todas as fases do processo penal, desde a prisão até o cumprimento da sentença, com defesa estratégica para cada caso.</p>
-                <div class="subsection">
-                    <ul>
-                        <li>Acompanhamento da prisão</li>
-                        <li>Relaxamento/Revogação da Prisão</li>
-                        <li>Pedido de Liberdade Provisória</li>
-                        <li>Pedido de Progressão de Regime</li>
-                        <li>Recursos Criminais</li>
-                        <li>Revisão Penal</li>
-                        <li>Habeas Corpus</li>
-                    </ul>
-                </div>
             </div>
-
             <div class="box">
                 <h3>Prisões Ilegais ou Desnecessárias</h3>
                 <p>Combate a prisões abusivas e indevidas, garantindo que seus direitos sejam respeitados e que a justiça seja aplicada de forma eficaz.</p>
-                <div class="subsection">
-                    <ul>
-                        <li>Pedido de Relaxamento/Revogação da Prisão</li>
-                        <li>Liberdade Provisória</li>
-                        <li>Progressão de Regime</li>
-                        <li>Recursos Criminais</li>
-                        <li>Revisão Penal</li>
-                        <li>Habeas Corpus</li>
-                    </ul>
-                </div>
             </div>
-
             <div class="box">
                 <h3>Tribunal do Júri</h3>
                 <p>Representação em todo o procedimento no Tribunal do Júri, buscando sempre a melhor defesa para o cliente com máxima dedicação.</p>
@@ -217,31 +164,25 @@
                 <h3>1. Primeiro Contato</h3>
                 <p>No primeiro contato, o cliente será informado sobre seus direitos e a situação, de forma clara e objetiva, para tomar decisões seguras.</p>
             </div>
-
             <div class="box">
                 <h3>2. Decisão de Contratar</h3>
                 <p>Ao decidir contratar o serviço, uma reunião será agendada, presencial ou online, para discutir estratégias e caminhos possíveis.</p>
             </div>
-
             <div class="box">
                 <h3>3. Serviço Contratado</h3>
                 <p>Com o serviço contratado, será oferecido acompanhamento completo, mantendo o cliente informado durante todo o processo.</p>
             </div>
         </div>
-        <a href="https://wa.me/5565996651992" class="whatsapp-link">Entre em contato via WhatsApp!</a>
+        <a href="https://wa.me/5565996651992" class="whatsapp-link">
+            <span class="whatsapp-icon"></span>
+            Entre em contato via WhatsApp
+        </a>
     </section>
 
     <!-- Seção Sobre Mim -->
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
-        <p>Me chamo Márcio Cardoso Junior, tenho 31 anos, sou servidor público municipal na cidade de Cuiabá-MT, aonde iniciei em 2016, e agora advogado criminalista (OABMT-35019/O). Pós-graduando em Direito Penal e Processo Penal. 
-
-Sou uma pessoa humilde, trabalhador, honesto e justo, assim escolhi pelo Direito, para buscar equidade para a minoria. Sei do valor de cada coisa, e reconheço como é difícil depositar a sua liberdade ou de um ente querido nas mãos de alguém. Busco sempre ser verdadeiro e respeitar os meus clientes, lhes dizendo somente à verdade, pois nunca se deve ludibriar o próximo ainda mais em questão do segundo bem mais precioso do ser humano, sua LIBERDADE. Busco sempre estar estudando/atualizado e ser o melhor em prol daquele em que estou servindo, seja em qualquer situação, de defesa ou acusação, estou sempre pronto para dar o meu melhor, POIS A MINHA ATUAÇÃO É VOLTADA PARA A DEFESA DOS DIREITOS FUNDAMENTAIS E O COMBATE ÀS INJUSTIÇAS.
-Ao longo da minha carreira, dediquei-me à defesa de meus clientes com comprometimento e paixão, sempre buscando justiça e soluções eficientes para cada caso. Atuo em diversas áreas do Direito Penal e Processo Penal, incluindo defesa criminal, recursos, habeas corpus, e casos complexos no Tribunal do Júri. Minha missão é garantir que os direitos dos meus clientes sejam respeitados, oferecendo uma defesa justa e combativa.
-
-Obrigado pela visita! 
-
-Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos o seu problema/dúvida! </p>
+        <p>Me chamo Márcio Cardoso Junior, tenho 31 anos, sou servidor público municipal na cidade de Cuiabá-MT, aonde iniciei em 2016, e agora advogado criminalista (OABMT-35019/O). Pós-graduando em Direito Penal e Processual.</p>
         
         <div class="photo-gallery">
             <img src="foto1.jpg" alt="Foto 1">
@@ -256,13 +197,15 @@ Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos 
         <p>Celular: (65) 9 9665-1992</p>
         <p>WhatsApp: <a href="https://wa.me/5565996651992">Clique aqui para WhatsApp</a></p>
         <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
         <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
     </section>
 
     <footer>
         <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
-        <a href="https://wa.me/5565996651992" class="whatsapp-link">Clique aqui para melhor atendê-lo(a)!</a>
+        <a href="https://wa.me/5565996651992" class="whatsapp-link">
+            <span class="whatsapp-icon"></span>
+            Clique aqui para WhatsApp
+        </a>
     </footer>
 
 </body>
