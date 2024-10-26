@@ -94,6 +94,7 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            text-align: justify;
         }
         h2 {
             font-size: 2em;
@@ -140,6 +141,22 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        @media (max-width: 768px) {
+            .box {
+                width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
+            }
+            nav a {
+                display: block; /* Torna os links do menu empilhados verticalmente no mobile */
+                margin: 10px 0;
+            }
+            .photo-gallery {
+                flex-direction: column; /* Torna as fotos em uma coluna no mobile */
+                align-items: center;
+            }
+            .photo-gallery img {
+                width: 80%; /* Ajusta a largura das imagens no mobile */
+                margin-bottom: 20px;
+            }
     </style>
 </head>
 <body>
