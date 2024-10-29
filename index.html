@@ -2,15 +2,14 @@
 <html lang="pt-BR">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16752306101"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16752306101"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'AW-16752306101');
-    <!-- Event snippet for Contato conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-16752306101/6ZBOCJSm7-IZELXPj7Q-'});
-</script>
+      gtag('config', 'AW-16752306101');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
@@ -185,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="header-content">
             <div class="header-title">ATENDIMENTO 24 HORAS</div>
             <div class="header-subtitle"></div>
-            <a href="https://wa.me/5565996651992" class="whatsapp-link">
+            <a href="https://wa.me/5565996651992" class="contato-link" id="whatsapp-link">
                 Fale comigo no WhatsApp! <span class="whatsapp-icon"></span>
             </a>
         </div>
@@ -302,18 +301,26 @@ Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos 
     <section id="contato">
         <h2>Contato</h2>
         <p>Celular: (65) 9 9665-1992</p>
-        <p>WhatsApp: <a href="https://wa.me/5565996651992">Clique aqui para WhatsApp</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" target="_blank">@adv.marciocardoso</a></p>
-        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com">advogadomarciocardoso1@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/5565996651992" class="contato-link">Clique aqui para WhatsApp</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/adv.marciocardoso" class="contato-link" target="_blank">@adv.marciocardoso</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/adv.marciocardoso" class="contato-link" target="_blank">@adv.marciocardoso</a></p>
+        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com" class="contato-link">advogadomarciocardoso1@gmail.com</a></p>
     </section>
 
     <footer>
         <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
-        <a href="https://wa.me/5565996651992" class="whatsapp-link footer-whatsapp-link">
+        <a href="https://wa.me/5565996651992" class="contato-link">Fale comigo agora!</a>
             Fale comigo agora! <span class="whatsapp-icon"></span>
         </a>
     </footer>
-
+<script>
+      document.querySelectorAll('.contato-link').forEach(link => {
+        link.addEventListener('click', () => {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16752306101/6ZBOCJSm7-IZELXPj7Q-'
+          });
+        });
+      });
+    </script>
 </body>
 </html>
