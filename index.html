@@ -174,13 +174,16 @@
             }
     }
         /* Estilo neutro para links de contato */
-        #contato a {
-            color: #333;
-            text-decoration: underline;
-        }
-        #contato a:hover {
-            color: #555;
-        }
+       #contato a.contato-link {
+    color: #333; /* Cor neutra */
+    text-decoration: underline;
+    background-color: transparent; /* Remove o fundo verde */
+    padding: 0; /* Remove o padding, se necessário */
+}
+
+#contato a.contato-link:hover {
+    color: #555; /* Cor ao passar o mouse */
+}
     </style>
 </head>
 <body>
