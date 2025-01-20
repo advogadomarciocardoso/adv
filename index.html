@@ -486,57 +486,15 @@ Ao longo da minha carreira, dediquei-me à defesa de meus clientes com compromet
         <h2>Avalie o Site</h2>
         <p>Nos ajude a melhorar! Avalie com até 5 estrelas:</p>
         <div class="rating">
-            <span class="star" data-value="5">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
             <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
         </div>
         <p id="rating-result">Sua avaliação: <span id="selected-rating">-</span></p>
         <p id="average-rating">Média: - (0 votos)</p>
     </section>
-    <script>
-        const stars = document.querySelectorAll('.star');
-        const selectedRating = document.getElementById('selected-rating');
-        const averageRatingElement = document.getElementById('average-rating');
-
-        // Salvar avaliação no Firebase
-        function saveRating(value) {
-            const dbRef = firebase.database().ref('ratings/');
-            dbRef.push({ rating: value, timestamp: new Date().toISOString() });
-        }
-
-        // Calcular média das avaliações
-        function calculateAverage() {
-            const dbRef = firebase.database().ref('ratings/');
-            dbRef.on('value', (snapshot) => {
-                const ratings = snapshot.val();
-                const totalRatings = Object.values(ratings || {}).length;
-                const sumRatings = Object.values(ratings || {}).reduce((sum, item) => sum + item.rating, 0);
-                const average = totalRatings > 0 ? (sumRatings / totalRatings).toFixed(1) : '-';
-                averageRatingElement.textContent = `Média: ${average} (${totalRatings} votos)`;
-            });
-        }
-
-        // Inicializar cálculo da média
-        calculateAverage();
-
-        // Adicionar evento de clique para as estrelas
-        stars.forEach(star => {
-            star.addEventListener('click', function () {
-                stars.forEach(s => s.classList.remove('selected'));
-                this.classList.add('selected');
-                let prevSibling = this.previousElementSibling;
-                while (prevSibling) {
-                    prevSibling.classList.add('selected');
-                    prevSibling = prevSibling.previousElementSibling;
-                }
-                const value = parseInt(this.getAttribute('data-value'));
-                selectedRating.textContent = value;
-                saveRating(value);
-                firebase.analytics().logEvent('rating', { rating_value: value });
-            });
-        });
-    </script>
+</footer>
 </body>
 </html>
