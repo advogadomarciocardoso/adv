@@ -10,28 +10,6 @@
 
       gtag('config', 'AW-16752306101');
     </script>
-        <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
-    <script>
-        // Configuração do Firebase
-        const firebaseConfig = {
-            apiKey: "AIzaSyAl5avtqoNGvPVRvCCiY8dRLk_8n6lVfuA",
-            authDomain: "advogadomarciocardoso-b5722.firebaseapp.com",
-            databaseURL: "https://advogadomarciocardoso-b5722-default-rtdb.firebaseio.com",
-            projectId: "advogadomarciocardoso-b5722",
-            storageBucket: "advogadomarciocardoso-b5722.appspot.com",
-            messagingSenderId: "226320797869",
-            appId: "1:226320797869:web:91d48486ca3d5103bfb624",
-            measurementId: "G-L8XRLHRXV8"
-        };
-
-        // Inicializar Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.getAnalytics(app);
-        const database = firebase.getDatabase(app);
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
@@ -206,35 +184,6 @@
 #contato a.contato-link:hover {
     color: #555; /* Cor ao passar o mouse */
 }
-         /* Estilo da seção de avaliação */
-        #avaliacao {
-            text-align: center;
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 600px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .rating {
-            display: inline-flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-        }
-        .star {
-            font-size: 2em;
-            color: #ccc;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        .star:hover,
-        .star:hover ~ .star {
-            color: #ffc107;
-        }
-        .star.selected {
-            color: #ffc107;
-        }
     </style>
 </head>
 <body>
@@ -482,19 +431,5 @@ Ao longo da minha carreira, dediquei-me à defesa de meus clientes com compromet
         });
       });
     </script>
-    <section id="avaliacao">
-        <h2>Avalie o Site</h2>
-        <p>Nos ajude a melhorar! Avalie com até 5 estrelas:</p>
-        <div class="rating">
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
-        </div>
-        <p id="rating-result">Sua avaliação: <span id="selected-rating">-</span></p>
-        <p id="average-rating">Média: - (0 votos)</p>
-    </section>
-</footer>
 </body>
 </html>
