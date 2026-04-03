@@ -19,7 +19,7 @@
         body {
             font-family: 'Georgia', serif;
             background-color: #f9f9f9;
-            color: #333;
+            color: #0f172a;
             margin: 0;
             padding: 0;
             text-align: justify;
@@ -29,7 +29,7 @@
             flex-direction: column;
             align-items: center;
             background-color: #333;
-            color: #fff;
+            color: #0f172a;
             padding: 30px;
             text-align: center;
             position: relative;
@@ -109,10 +109,8 @@
             text-align: justify;
         }
         h2 {
-            font-size: 2em;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
+            color: #0f172a;
+    border-bottom: 2px solid #0f172a;
         .box-container {
             display: flex;
             flex-wrap: wrap;
@@ -151,6 +149,51 @@
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
+}
+        /* ===== CONTATO OTIMIZADO ===== */
+.contato-box {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contato-box h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #0f172a;
+}
+
+.contato-urgencia {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+.contato-info {
+    margin-top: 10px;
+}
+
+.contato-info p {
+    margin: 6px 0;
+    color: #1e293b;
+    font-size: 16px;
 }
         footer {
             background-color: #333;
@@ -319,7 +362,7 @@ Resposta rápida no WhatsApp.</p>
           </div> 
         
          <div class="cta-flagrante">
-    <p>🚔 Teve um PARENTE preso agora? Atendimento imediato 24h ⚖️</p>
+    <p>🚨🚔 Teve um PARENTE preso agora? Atendimento imediato 24h ⚖️🚨</p>
     
     <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
         Falar no WhatsApp Agora
@@ -351,7 +394,7 @@ Resposta rápida no WhatsApp.</p>
             </div>
         </div>
        <div class="cta-flagrante">
-    <p>🚔 Foi preso em flagrante? Atendimento imediato 24h ⚖️</p>
+    <p>🚨🚔 Foi preso em flagrante? Atendimento imediato 24h ⚖️🚨</p>
     
     <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
         Falar no WhatsApp Agora
@@ -379,14 +422,23 @@ Ao longo da minha carreira, dediquei-me à defesa de meus clientes com compromet
     </section>
 
     <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Celular: (65) 9 9665-1992</p>
-        <p>WhatsApp: <a href="https://wa.me/5565996651992" class="contato-link">Clique aqui para WhatsApp</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/adv.marciocardoso" class="contato-link" target="_blank">@adv.marciocardoso</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/marciocardosojr15" class="contato-link" target="_blank">@marciocardosojr15</a></p>
-        <p>Email: <a href="mailto:advogadomarciocardoso1@gmail.com" class="contato-link">advogadomarciocardoso1@gmail.com</a></p>
-    </section>
+    <section id="contato" class="contato-box">
+    <h2>Contato</h2>
+
+    <p class="contato-urgencia">
+        🚔 Precisa de advogado agora? Atendimento imediato 24h ⚖️
+    </p>
+
+    <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
+        Falar no WhatsApp Agora
+    </a>
+
+    <div class="contato-info">
+        <p>📞 Celular: (65) 9 9665-1992</p>
+        <p>📧 Email: advogadomarciocardoso1@gmail.com</p>
+        <p>📱 Instagram: @marciocardosojr15</p>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
