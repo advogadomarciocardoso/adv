@@ -2,19 +2,19 @@
 <html lang="pt-BR">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8XRLHRXV8">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8XRLHRXV8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L8XRLHRXV8');
+    </script>
 
-  gtag('config', 'G-L8XRLHRXV8');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Márcio Cardoso - Advogado Criminalista - Atendimento 24h">
     <title>Márcio Cardoso - Advogado Criminal - Atendimento 24h</title>
+
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -24,7 +24,8 @@
             padding: 0;
             text-align: justify;
         }
-               header {
+
+        header {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,15 +35,14 @@
             text-align: center;
             position: relative;
         }
+
         .header-image {
             width: 100%;
-            height: 300px;
             background: url('header-background.jpg') center/cover no-repeat;
             background-size: cover;
-    background-position: center;
-    height: 500px;
+            background-position: center;
+            height: 500px;
         }
-
 
         .header-content {
             max-width: 800px;
@@ -52,32 +52,39 @@
             align-items: center;
             gap: 15px;
         }
+
         .header-title {
             font-size: 2em;
             font-weight: bold;
             margin: 0;
+            color: #fff;
         }
+
         .header-subtitle {
             font-size: 1.1em;
             font-weight: normal;
         }
-        .whatsapp-link, .contato-link {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1em;
-    text-decoration: none;
-    padding: 8px 15px;
-    background-color: #25d366;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
 
-.whatsapp-link:hover, .contato-link:hover {
-    background-color: #128c7e;
-}
+        .whatsapp-link,
+        .contato-link {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1em;
+            text-decoration: none;
+            padding: 8px 15px;
+            background-color: #25d366;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .whatsapp-link:hover,
+        .contato-link:hover {
+            background-color: #128c7e;
+            transform: scale(1.02);
+        }
 
         .whatsapp-icon {
             width: 18px;
@@ -85,20 +92,24 @@
             display: inline-block;
             background: url('whatsapp-icon.png') center/contain no-repeat;
         }
+
         nav {
             background-color: #444;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         section {
             max-width: 1200px;
             margin: 20px auto;
@@ -108,16 +119,20 @@
             border-radius: 8px;
             text-align: justify;
         }
+
         h2 {
             font-size: 2em;
-            border-bottom: 2px solid #333;
+            border-bottom: 2px solid #0f172a;
             padding-bottom: 10px;
+            color: #0f172a;
         }
+
         .box-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .box {
             width: 45%;
             background-color: #f0f0f0;
@@ -125,33 +140,73 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
+
         .box h3 {
             font-size: 1.5em;
             margin-bottom: 15px;
+            color: #0f172a;
         }
+
         .cta-flagrante {
-    text-align: center;
-    padding: 30px 20px;
-}
+            text-align: center;
+            padding: 30px 20px;
+        }
 
-.cta-flagrante p {
-    font-size: 22px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #0f172a; /* mais escuro */
-}
+        .cta-flagrante p {
+            font-size: 22px;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+            color: #0f172a;
+            text-align: center;
+        }
 
-.btn-whatsapp {
-    background-color: #25D366;
-    color: white;
-    padding: 14px 28px;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-}
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128c7e;
+            transform: scale(1.03);
+        }
+
+        .contato-box {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contato-box h2 {
+            text-align: center;
+        }
+
+        .contato-urgencia {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0f172a;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .contato-info {
+            margin-top: 15px;
+        }
+
+        .contato-info p {
+            margin: 6px 0;
+            color: #1e293b;
+            font-size: 16px;
+            text-align: center;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -159,66 +214,85 @@
             text-align: center;
             font-size: 1em;
         }
-        
+
         .footer-whatsapp-link {
             margin-top: 15px;
             display: inline-flex;
             align-items: center;
             gap: 8px;
         }
+
         .photo-gallery {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
+            gap: 20px;
         }
+
         .photo-gallery img {
             width: 30%;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         @media (max-width: 768px) {
             .box {
                 width: 100%;
             }
+
             nav a {
                 display: block;
                 margin: 10px 0;
             }
+
             .photo-gallery {
                 flex-direction: column;
                 align-items: center;
             }
+
             .photo-gallery img {
                 width: 80%;
                 margin-bottom: 20px;
             }
-                
-    .header-image {
-        height: 200px;
-            }
-    }
-        #contato a.contato-link {
-    color: #333;
-    text-decoration: underline;
-    background-color: transparent;
-    padding: 0;
-}
 
-#contato a.contato-link:hover {
-    color: #555;
-}
+            .header-image {
+                height: 200px;
+            }
+        }
+
+        /* Estilo neutro apenas para links simples de contato dentro da seção contato */
+        #contato a.link-neutro {
+            color: #0f172a;
+            text-decoration: underline;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            display: inline;
+            font-weight: normal;
+        }
+
+        #contato a.link-neutro:hover {
+            color: #334155;
+            background-color: transparent;
+            transform: none;
+        }
     </style>
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLGQF9VB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLGQF9VB"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
         <div class="header-image"></div>
         <div class="header-content">
-            <div class="header-title">🚨ATENDIMENTO 24H EM FLAGRANTE🚨</div>
-            <a href="https://wa.me/5565996651992" class="contato-link" id="whatsapp-link">
+            <div class="header-title">🚨 ATENDIMENTO 24H EM FLAGRANTE 🚨</div>
+            <div class="header-subtitle"></div>
+            <a href="https://wa.me/5565996651992" class="contato-link" id="whatsapp-link" target="_blank">
                 🚨 URGENTE? Fale comigo agora no WhatsApp! 🚨 <span class="whatsapp-icon"></span>
             </a>
         </div>
@@ -234,139 +308,142 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Seção Serviços -->
     <section id="servicos">
         <h2>Serviços</h2>
+
         <div class="box-container">
-          <div class="box">
-    <h3>1. Prisão em Flagrante – 🚨 PLANTÃO 24h 🚨</h3>
-    <p>Seu familiar foi PRESO? Atendimento imediato em delegacia e audiência de custódia.
-Resposta rápida no WhatsApp.</p>
-    <div class="subsection">
-        <ul>
-            <li>Atendimento imediato em delegacias</li>
-            <li>Análise da legalidade da prisão</li>
-            <li>Pedido de liberdade provisória ou fiança</li>
-            <li>Contato e orientação à família</li>
-        </ul>
-    </div>
-              </div>
             <div class="box">
-    <h3>2. Delegacia e Inquérito Policial</h3>
-    <p>Atuação desde o primeiro contato com a autoridade policial, garantindo orientação jurídica segura ainda na fase inicial do caso.</p>
-    <div class="subsection">
-        <ul>
-            <li>Acompanhamento em Delegacias</li>
-            <li>Orientação para depoimentos</li>
-            <li>Defesa durante investigações</li>
-            <li>Pedidos de diligências e esclarecimentos</li>
-        </ul>
-    </div>
-</div>
-<div class="box">
-    <h3>3. Audiência de Custódia</h3>
-    <p>Defesa técnica na audiência de custódia, buscando o relaxamento da prisão ou a aplicação de medidas cautelares.</p>
-    <div class="subsection">
-        <ul>
-            <li>Atuação direta na audiência</li>
-            <li>Pedido de liberdade provisória</li>
-            <li>Questionamento de abusos ou ilegalidades</li>
-            <li>Substituição da prisão por medidas cautelares</li>
-        </ul>
-    </div>
-</div>
+                <h3>1. Prisão em Flagrante – 🚨 PLANTÃO 24h 🚨</h3>
+                <p>Seu familiar foi PRESO? Atendimento imediato em delegacia e audiência de custódia. Resposta rápida no WhatsApp.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Atendimento imediato em delegacias</li>
+                        <li>Análise da legalidade da prisão</li>
+                        <li>Pedido de liberdade provisória ou fiança</li>
+                        <li>Contato e orientação à família</li>
+                    </ul>
+                </div>
+            </div>
 
-<div class="box">
-    <h3>4. Prisão Preventiva e Temporária</h3>
-    <p>Atuação estratégica contra prisões desnecessárias, com pedidos de revogação e medidas judiciais cabíveis.</p>
-    <div class="subsection">
-        <ul>
-            <li>Pedidos de revogação de prisão</li>
-            <li>Habeas Corpus</li>
-            <li>Substituição por medidas cautelares</li>
-            <li>Atuação em decisões urgentes</li>
-        </ul>
-    </div>
-</div>
+            <div class="box">
+                <h3>2. Delegacia e Inquérito Policial</h3>
+                <p>Atuação desde o primeiro contato com a autoridade policial, garantindo orientação jurídica segura ainda na fase inicial do caso.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Acompanhamento em Delegacias</li>
+                        <li>Orientação para depoimentos</li>
+                        <li>Defesa durante investigações</li>
+                        <li>Pedidos de diligências e esclarecimentos</li>
+                    </ul>
+                </div>
+            </div>
 
-<div class="box">
-    <h3>5. Defesa Criminal e Tribunal do Júri</h3>
-    <p>Atuação completa no processo penal, incluindo defesa em crimes dolosos contra a vida e julgamento pelo Tribunal do Júri.</p>
-    <div class="subsection">
-        <ul>
-            <li>Defesa em ações penais</li>
-            <li>Audiência de instrução e julgamento</li>
-            <li>Atuação no Tribunal do Júri</li>
-            <li>Elaboração de teses defensivas</li>
-            <li>Recursos e habeas corpus</li>
-        </ul>
-    </div>
-</div>
+            <div class="box">
+                <h3>3. Audiência de Custódia</h3>
+                <p>Defesa técnica na audiência de custódia, buscando o relaxamento da prisão ou a aplicação de medidas cautelares.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Atuação direta na audiência</li>
+                        <li>Pedido de liberdade provisória</li>
+                        <li>Questionamento de abusos ou ilegalidades</li>
+                        <li>Substituição da prisão por medidas cautelares</li>
+                    </ul>
+                </div>
+            </div>
 
-<div class="box">
-    <h3>6. Execução Penal</h3>
-    <p>Atuação na fase de cumprimento da pena, buscando benefícios legais e a progressão do regime prisional.</p>
-    <div class="subsection">
-        <ul>
-            <li>Progressão de regime</li>
-            <li>Remição por trabalho ou estudo</li>
-            <li>Saída temporária</li>
-            <li>Livramento condicional</li>
-            <li>Indulto e comutação de pena</li>
-        </ul>
-    </div>
-</div>
-          </div> 
-        
-         <div class="cta-flagrante">
-    <p>🚨🚔 Teve um PARENTE preso agora? Atendimento imediato 24h ⚖️🚨</p>
-    
-    <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
-        Falar no WhatsApp Agora
-    </a>
-</div>
-            
-       
+            <div class="box">
+                <h3>4. Prisão Preventiva e Temporária</h3>
+                <p>Atuação estratégica contra prisões desnecessárias, com pedidos de revogação e medidas judiciais cabíveis.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Pedidos de revogação de prisão</li>
+                        <li>Habeas Corpus</li>
+                        <li>Substituição por medidas cautelares</li>
+                        <li>Atuação em decisões urgentes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>5. Defesa Criminal e Tribunal do Júri</h3>
+                <p>Atuação completa no processo penal, incluindo defesa em crimes dolosos contra a vida e julgamento pelo Tribunal do Júri.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Defesa em ações penais</li>
+                        <li>Audiência de instrução e julgamento</li>
+                        <li>Atuação no Tribunal do Júri</li>
+                        <li>Elaboração de teses defensivas</li>
+                        <li>Recursos e habeas corpus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>6. Execução Penal</h3>
+                <p>Atuação na fase de cumprimento da pena, buscando benefícios legais e a progressão do regime prisional.</p>
+                <div class="subsection">
+                    <ul>
+                        <li>Progressão de regime</li>
+                        <li>Remição por trabalho ou estudo</li>
+                        <li>Saída temporária</li>
+                        <li>Livramento condicional</li>
+                        <li>Indulto e comutação de pena</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-flagrante">
+            <p>🚔 Teve um PARENTE preso agora? Atendimento imediato 24h ⚖️</p>
+            <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp contato-link">
+                Falar no WhatsApp Agora
+            </a>
+        </div>
     </section>
 
     <!-- Seção Método de Atendimento -->
     <section id="metodo">
         <h2>Método de Atendimento</h2>
+
         <div class="box-container">
             <div class="box">
                 <h3>1. Primeiro Contato</h3>
                 <p>No primeiro contato, o cliente será informado sobre seus direitos e a situação, de forma clara e objetiva, para tomar decisões seguras.</p>
             </div>
+
             <div class="box">
                 <h3>2. Decisão de Contratar</h3>
                 <p>Ao decidir contratar o serviço, uma reunião será agendada, presencial ou online, para discutir estratégias e caminhos possíveis.</p>
             </div>
+
             <div class="box">
                 <h3>3. Serviço Contratado</h3>
                 <p>Com o serviço contratado, será oferecido acompanhamento completo, mantendo o cliente informado durante todo o processo.</p>
             </div>
+
             <div class="box">
                 <h3>4. Comprometimento e Empatia</h3>
-                <p>Aqui será exposto ao cliente ou familiares qual o melhor caminho para tomadas de decisões, sempre com veracidade e comprometimento, empatia e respeito. Mantendo o sigilo e agilidade em todo o flagrante ou processo.</p>
+                <p>Aqui será exposto ao cliente ou familiares qual o melhor caminho para tomadas de decisões, sempre com veracidade, comprometimento, empatia e respeito. Mantendo o sigilo e agilidade em todo o flagrante ou processo.</p>
             </div>
         </div>
-       <div class="cta-flagrante">
-    <p>🚨🚔 Foi preso em flagrante? Atendimento imediato 24h ⚖️🚨</p>
-    
-    <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
-        Falar no WhatsApp Agora
-    </a>
-</div>
+
+        <div class="cta-flagrante">
+            <p>🚔 Foi preso em flagrante? Atendimento imediato 24h ⚖️</p>
+            <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp contato-link">
+                Falar no WhatsApp Agora
+            </a>
+        </div>
     </section>
 
     <!-- Seção Sobre Mim -->
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
-        <p>Me chamo Márcio Cardoso Junior, tenho 33 anos, sou ex-servidor público municipal na cidade de Cuiabá-MT, aonde iniciei em 2016, e agora advogado criminalista (OABMT-35019/O). Pós-graduado em Direito Penal e Processo Penal. </p>
 
-<p>Sou uma pessoa humilde, trabalhador, honesto e justo, assim escolhi pelo Direito, para buscar equidade para a minoria. Sei do valor de cada coisa, e reconheço como é difícil depositar a sua liberdade ou de um ente querido nas mãos de alguém. Busco sempre ser verdadeiro e respeitar os meus clientes, lhes dizendo somente à verdade, pois nunca se deve ludibriar o próximo ainda mais em questão do segundo bem mais precioso do ser humano, sua LIBERDADE. Busco sempre estar estudando/atualizado e ser o melhor em prol daquele em que estou servindo, seja em qualquer situação, de defesa ou acusação, estou sempre pronto para dar o meu melhor, POIS A MINHA ATUAÇÃO É VOLTADA PARA A DEFESA DOS DIREITOS FUNDAMENTAIS E O COMBATE ÀS INJUSTIÇAS.
-Ao longo da minha carreira, dediquei-me à defesa de meus clientes com comprometimento e paixão, sempre buscando justiça e soluções eficientes para cada caso. Atuo em diversas áreas do Direito Penal e Processo Penal, incluindo DEFESA CRIMINAL, RELAXAMENTO DE PRISÃO EM FLAGRANTE, HABEAS CORPUS, e casos complexos no Tribunal do Júri. Minha missão é garantir que os direitos dos meus clientes sejam respeitados, oferecendo uma defesa justa e combativa.</p>
+        <p>Me chamo Márcio Cardoso Junior, tenho 33 anos, sou ex-servidor público municipal na cidade de Cuiabá-MT, aonde iniciei em 2016, e agora advogado criminalista (OABMT-35019/O). Pós-graduado em Direito Penal e Processo Penal.</p>
 
-<p>Obrigado pela visita! </p>
+        <p>Sou uma pessoa humilde, trabalhador, honesto e justo, assim escolhi pelo Direito, para buscar equidade para a minoria. Sei do valor de cada coisa, e reconheço como é difícil depositar a sua liberdade ou de um ente querido nas mãos de alguém. Busco sempre ser verdadeiro e respeitar os meus clientes, lhes dizendo somente a verdade, pois nunca se deve ludibriar o próximo ainda mais em questão do segundo bem mais precioso do ser humano, sua LIBERDADE. Busco sempre estar estudando/atualizado e ser o melhor em prol daquele em que estou servindo, seja em qualquer situação, de defesa ou acusação, estou sempre pronto para dar o meu melhor, pois a minha atuação é voltada para a defesa dos direitos fundamentais e o combate às injustiças. Ao longo da minha carreira, dediquei-me à defesa de meus clientes com comprometimento e paixão, sempre buscando justiça e soluções eficientes para cada caso. Atuo em diversas áreas do Direito Penal e Processo Penal, incluindo defesa criminal, relaxamento de prisão em flagrante, habeas corpus, e casos complexos no Tribunal do Júri. Minha missão é garantir que os direitos dos meus clientes sejam respeitados, oferecendo uma defesa justa e combativa.</p>
 
-<p>Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos o seu problema/dúvida! </p>
+        <p>Obrigado pela visita!</p>
+
+        <p>Meus contatos estão facilmente visíveis no site, fale comigo para resolvermos o seu problema/dúvida!</p>
 
         <div class="photo-gallery">
             <img src="foto1.jpg" alt="Foto 1">
@@ -377,40 +454,39 @@ Ao longo da minha carreira, dediquei-me à defesa de meus clientes com compromet
 
     <!-- Seção Contato -->
     <section id="contato" class="contato-box">
-    <h2>Contato</h2>
+        <h2>Contato</h2>
 
-    <p class="contato-urgencia">
-        🚔 Precisa de advogado agora? Atendimento imediato 24h ⚖️
-    </p>
+        <p class="contato-urgencia">
+            🚔 Precisa de advogado agora? Atendimento imediato 24h ⚖️
+        </p>
 
-    <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp">
-        Falar no WhatsApp Agora
-    </a>
+        <a href="https://wa.me/5565996651992" target="_blank" class="btn-whatsapp contato-link">
+            Falar no WhatsApp Agora
+        </a>
 
-    <div class="contato-info">
-        <p>📞 Celular: (65) 9 9665-1992</p>
-        <p>📧 Email: advogadomarciocardoso1@gmail.com</p>
-        <p>📱 Instagram: @marciocardosojr15</p>
-    </div>
-</section>
+        <div class="contato-info">
+            <p>📞 Celular: (65) 9 9665-1992</p>
+            <p>📧 Email: <a href="mailto:advogadomarciocardoso1@gmail.com" class="link-neutro">advogadomarciocardoso1@gmail.com</a></p>
+            <p>📱 Instagram: <a href="https://www.instagram.com/marciocardosojr15" class="link-neutro" target="_blank">@marciocardosojr15</a></p>
+            <p>📘 Facebook: <a href="https://www.facebook.com/adv.marciocardoso" class="link-neutro" target="_blank">@adv.marciocardoso</a></p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Márcio Cardoso - Todos os direitos reservados.</p>
-        <a href="https://wa.me/5565996651992" class="contato-link">🚔🔒 Precisando de Advogado com URGÊNCIA? Click e fale comigo AGORA! 🕊️ <span class="whatsapp-icon"></span> </a> 
+        <a href="https://wa.me/5565996651992" class="contato-link" target="_blank">
+            🚔🔒 Precisando de Advogado com URGÊNCIA? Clique e fale comigo AGORA! 🕊️ <span class="whatsapp-icon"></span>
+        </a>
     </footer>
-<script>
-      document.querySelectorAll('.contato-link').forEach(link => {
-        link.addEventListener('click', () => {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-16752306101/6ZBOCJSm7-IZELXPj7Q-'
-          });
+
+    <script>
+        document.querySelectorAll('.contato-link').forEach(link => {
+            link.addEventListener('click', () => {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-16752306101/6ZBOCJSm7-IZELXPj7Q-'
+                });
+            });
         });
-      });
     </script>
 </body>
 </html>
-
-
-
-
-
