@@ -29,7 +29,7 @@
             flex-direction: column;
             align-items: center;
             background-color: #333;
-            color: #0f172a;
+            color: #fff;
             padding: 30px;
             text-align: center;
             position: relative;
@@ -109,8 +109,10 @@
             text-align: justify;
         }
         h2 {
-            color: #0f172a;
-    border-bottom: 2px solid #0f172a;
+            font-size: 2em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
         .box-container {
             display: flex;
             flex-wrap: wrap;
@@ -150,7 +152,6 @@
     text-decoration: none;
     display: inline-block;
 }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -177,35 +178,34 @@
         }
         @media (max-width: 768px) {
             .box {
-                width: 100%; /* Faz com que as caixas ocupem 100% da largura em telas menores */
+                width: 100%;
             }
             nav a {
-                display: block; /* Torna os links do menu empilhados verticalmente no mobile */
+                display: block;
                 margin: 10px 0;
             }
             .photo-gallery {
-                flex-direction: column; /* Torna as fotos em uma coluna no mobile */
+                flex-direction: column;
                 align-items: center;
             }
             .photo-gallery img {
-                width: 80%; /* Ajusta a largura das imagens no mobile */
+                width: 80%;
                 margin-bottom: 20px;
             }
                 
     .header-image {
-        height: 200px; /* Altura para desktops */
+        height: 200px;
             }
     }
-        /* Estilo neutro para links de contato */
-       #contato a.contato-link {
-    color: #333; /* Cor neutra */
+        #contato a.contato-link {
+    color: #333;
     text-decoration: underline;
-    background-color: transparent; /* Remove o fundo verde */
-    padding: 0; /* Remove o padding, se necessário */
+    background-color: transparent;
+    padding: 0;
 }
 
 #contato a.contato-link:hover {
-    color: #555; /* Cor ao passar o mouse */
+    color: #555;
 }
     </style>
 </head>
@@ -213,13 +213,11 @@
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLGQF9VB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
     <header>
         <div class="header-image"></div>
         <div class="header-content">
             <div class="header-title">🚨ATENDIMENTO 24H EM FLAGRANTE🚨</div>
-            <div class="header-subtitle"></div>
             <a href="https://wa.me/5565996651992" class="contato-link" id="whatsapp-link">
                 🚨 URGENTE? Fale comigo agora no WhatsApp! 🚨 <span class="whatsapp-icon"></span>
             </a>
